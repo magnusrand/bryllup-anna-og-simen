@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+.landing-page__image-in-carousel {
+  background: url("https://lh3.googleusercontent.com/7bcKIyhaEGPL3AlqvjWfh9vTV6fZ1GhkJ4H55rPUU9ghQV5DmqIu-vayapZRPLDxo0-4A18HGp-THGTCC2oejkyVQILjv1wEjxH0jzDpaAWq4TSlD8ZHiIZW_T2K30-XfMCyuFXaPAfA22uLX8y4Jkxdrlg4g6sr8JrxRL00zsYweMzbRBTHqMF5dehjD-Bru68aUON-AJy-35tgkRBcBfZbmMSyeV7690R4FCJpr6soRaG2xvL6_O2MgzhyUm-TXFGiloPZblbdAzboHY4A1ukcF0_9afuaeACgBdRslK8LqA61G260R_lFGhPoUcJiCeroXEQpWZvs9LsoukjlL8UdmJyc3i42A3mF_2oX1lIETL84AJmbPDtCfitznvLYnc1gpCT6QVTTheWdtSXn2I_YLk92Ohrhz-zv9t1iGD1helhCbJXO8HovD95yYf2eJ6tliouFmBQ1mAzh2qAEgnX03ZGW4LlGlo8m2BYJ74lngmqMC4Pb1RhpU5iB0dFYAqBwhKy97_V-kObZaO3fQZFw1NPsFSJmbQ3G0qtB-nr8PPWSW0YujI3WlDVks-kAYaYaPQ5rAfCDocPITW0XMDqKx0UjD-AUMMTpDQE6KzEWIOpZhYMS6oowZeCcrkecOskEr49cGSFIXJxc8FMe-N4fyNYCeJlK_qecK4XgtHlaeCMTRKcn7WSvFXb6BNKlAQ6vE3bAJmzHg15fpd17HGKglflG76ktEs_dmQIJWd4bLfokBB5MdhsXD6Ry4qCPHbhQVDkQ4X4JPd82MDJOUzLduVftFhG36CovfT0nOy2TrTtYFcnZzSl08SKLdTuCi5Rq8tbN3tiXlLSk1G9nhYQmg71YUVjzCgko4SxcNS9Gw3OXhvNYc91sArHBgGzbBIAwnFMG0vr9J76QrkaDWf4g8wGGwU2Oo7t1nbtkq9zizeJYDw=w1046-h1854-no?authuser=0")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.landing-page__main-heading {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  right: 0;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: "Dancing Script", cursive;
+  font-size: 8rem;
 }
