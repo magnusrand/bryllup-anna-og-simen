@@ -14,8 +14,20 @@ export const LandigPage = () => {
             <Carousel>
               <Carousel.Item>
                 <div
-                  className="landing-page__image-in-carousel"
+                  className="landing-page__image-in-carousel image-1"
                   aria-label="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div
+                  className="landing-page__image-in-carousel image-2"
+                  aria-label="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <div
+                  className="landing-page__image-in-carousel image-3"
+                  aria-label="Third slide"
                 />
               </Carousel.Item>
             </Carousel>
