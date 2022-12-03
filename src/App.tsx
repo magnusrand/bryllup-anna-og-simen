@@ -1,9 +1,9 @@
 import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { LandigPage } from "./pages/LandingPage";
+import { Menu } from "./components/Menu/Menu";
 
 import "./App.css";
-import { MenuBar } from "./components/MenuBar";
-import { Routes, Route, useLocation } from "react-router-dom";
 
 export type Page = "/" | "/gaveonsker" | "/kontakt-oss" | "program";
 
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandigPage />} />
       </Routes>
-      <MenuBar activeElement={currentPath.pathname} />
+      <Menu activeElement={currentPath.pathname} />
     </div>
   );
 }
