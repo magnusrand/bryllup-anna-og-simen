@@ -1,0 +1,8 @@
+.link {
+  padding: 0.75em;
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: large;
+  margin-block: 0.5em;
+}
