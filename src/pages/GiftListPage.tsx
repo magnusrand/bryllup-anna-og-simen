@@ -1,4 +1,5 @@
 import { Link } from "../components/Link";
+import "./GiftListPage.css";
 
 export const GiftListPage = () => {
   return (

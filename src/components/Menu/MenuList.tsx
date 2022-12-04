@@ -18,7 +18,7 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
           X
         </button>
         <div ref={ref} className="menu-list__container">
-          <ListItem to={"/"} name="Gaveønsker" />
+          <ListItem to={"/gaveonsker"} name="Gaveønsker" />
           <ListItem to={"/"} name="Helgeprogram" />
           <ListItem to={"/"} name="Bryllupsdagen" />
           <ListItem to={"/"} name="Overnatting" />
