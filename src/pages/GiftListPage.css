@@ -1,0 +1,40 @@
+.gaveonsker__header-header {
+  padding: 1rem;
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+
+.gaveonsker__header-text {
+  font-family: "Alice";
+}
+
+.gaveonsker__header-text::before {
+  margin-bottom: 0.5rem;
+}
+
+.gaveonsker__header-text::after {
+  margin-top: 0.5rem;
+}
+
+.gaveonsker__header-text::before,
+.gaveonsker__header-text::after {
+  display: block;
+  height: 2px;
+  content: "";
+  background: var(--white-color);
+  margin-inline: 1rem;
+}
+
+.gaveonsker__description {
+  font-size: large;
+  font-weight: bold;
+}
+
+.gaveonsker__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
