@@ -1,5 +1,6 @@
 :root {
   --menubar-height: 6rem;
+  --menubar-icon-width: 2.875rem;
   --menu-color: var(--tertiary-color);
   --menu-hover-color: var(--tertiary-color--hover);
   --menu-item-gap: 3rem;
@@ -30,6 +31,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: var(--menubar-icon-width);
 }
 
 .menubar__item__container:hover {
@@ -41,8 +44,8 @@ nav {
 }
 
 .menubar__item__icon-container {
-  height: 2.875rem;
-  width: 2.875rem;
+  height: var(--menubar-icon-width);
+  width: var(--menubar-icon-width);
   border-radius: 100%;
   background-color: var(--secondary-color);
   display: flex;
