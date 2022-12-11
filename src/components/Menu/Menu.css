@@ -1,7 +1,7 @@
 :root {
   --menubar-height: 6rem;
   --menu-color: var(--tertiary-color);
-  --menu-item-gap: 2rem;
+  --menu-item-gap: 3rem;
   --menu-item-height: 8rem;
 }
 
@@ -84,6 +84,9 @@ nav {
   color: var(--white-color);
   font-size: 2.25rem;
   font-weight: 300;
+
+  box-shadow: 0px 0px 0px 10px var(--menu-color) inset,
+    0px 0px 0px 12px var(--white-color) inset;
 }
 
 .menu-list__item:hover {
@@ -96,7 +99,7 @@ nav {
 }
 
 .menu-list__item:first-child {
-  margin-top: var(--menu-item-gap);
+  margin-top: calc(var(--menu-item-gap) * 5);
 }
 
 .menu-list__item:last-child {
@@ -121,13 +124,13 @@ nav {
   right: 4rem;
   z-index: 3;
 
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   box-shadow: 1px 2px 48px -1px rgba(0, 0, 0, 0.26);
-  border: none;
+  border: solid var(--menu-color) 0.2rem;
   border-radius: 50%;
-  font-size: 2.5rem;
-  width: 4.5rem;
-  height: 4.5;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .menu-list__close-button:hover {

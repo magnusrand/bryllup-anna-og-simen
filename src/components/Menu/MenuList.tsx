@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, To } from "react-router-dom";
+import { MdClose } from "react-icons/md";
 
 type MenuListProps = {
   open: boolean;
@@ -15,7 +16,7 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
           onClick={() => setOpen(false)}
           aria-label="Lukk meny"
         >
-          X
+          <MdClose />
         </button>
         <div className="menu-list__wrapper">
           <div ref={ref} className="menu-list">
