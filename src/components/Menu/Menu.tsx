@@ -20,6 +20,7 @@ export const Menu = ({ activeElement }: MenuProps) => {
       listContainerRef.current?.classList.remove(
         "menu-list__wrapper--animate-out"
       );
+
       setOpen(false);
     }, 200);
   });
