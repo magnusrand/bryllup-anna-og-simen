@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, To } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 
@@ -18,8 +18,8 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
         >
           <MdClose />
         </button>
-        <div className="menu-list__wrapper">
-          <div ref={ref} className="menu-list">
+        <div ref={ref} className="menu-list__wrapper">
+          <div className="menu-list">
             <ListItem to={"/gaveonsker"} name="Gaveønsker" setOpen={setOpen} />
             <ListItem to={"/"} name="Helgeprogram" setOpen={setOpen} />
             <ListItem to={"/"} name="Bryllupsdagen" setOpen={setOpen} />
