@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link, To } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 
