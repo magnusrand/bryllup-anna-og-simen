@@ -12,10 +12,12 @@ function App() {
   const currentPath = useLocation();
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<LandigPage />} />
-        <Route path="/gaveonsker" element={<GiftListPage />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<LandigPage />} />
+          <Route path="/gaveonsker" element={<GiftListPage />} />
+        </Routes>
+      </div>
       <Menu activeElement={currentPath.pathname} />
     </div>
   );
