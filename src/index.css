@@ -32,4 +32,6 @@ body :not(:is(h1, h2, h3, h4, h5, h6)) {
   --accent-2-color: #769293;
   --white-color: #ffffff;
   --text-color: #1f1f1f;
+
+  --tertiary-color--hover: #cc884b;
 }

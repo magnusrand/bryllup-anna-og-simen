@@ -1,6 +1,7 @@
 :root {
   --menubar-height: 6rem;
   --menu-color: var(--tertiary-color);
+  --menu-hover-color: var(--tertiary-color--hover);
   --menu-item-gap: 3rem;
   --menu-item-height: 8rem;
 }
@@ -87,11 +88,12 @@ nav {
 
   box-shadow: 0px 0px 0px 10px var(--menu-color) inset,
     0px 0px 0px 12px var(--white-color) inset;
+  transition: all ease 0.2s;
 }
 
 .menu-list__item:hover {
-  filter: brightness(120%);
-  color: var(--white-color);
+  background-color: var(--menu-hover-color);
+  transition: all ease 0.2s;
 }
 
 .menu-list__item:active {
@@ -126,7 +128,7 @@ nav {
 
   background-color: var(--white-color);
   box-shadow: 1px 2px 48px -1px rgba(0, 0, 0, 0.26);
-  border: solid var(--menu-color) 0.2rem;
+  border: solid var(--menu-color) 0.3rem;
   border-radius: 50%;
   font-size: 2rem;
   width: 3.5rem;
@@ -134,7 +136,7 @@ nav {
 }
 
 .menu-list__close-button:hover {
-  filter: brightness(110%);
+  border: solid var(--menu-hover-color) 0.3rem;
 }
 /* MENU LIST end */
 
