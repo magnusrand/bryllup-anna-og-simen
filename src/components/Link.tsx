@@ -9,7 +9,7 @@ type LinkProps = {
 
 export const Link: React.FC<LinkProps> = ({ href, children }) => {
   return (
-    <a href={href} className="link">
+    <a href={href} className="link responsive-normal-text">
       {children}
     </a>
   );

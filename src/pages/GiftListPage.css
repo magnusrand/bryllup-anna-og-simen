@@ -2,7 +2,6 @@
   padding: 1rem;
   background-color: var(--tertiary-color);
   color: var(--white-color);
-  font-size: xx-large;
   margin-bottom: 1rem;
 }
 
@@ -30,6 +29,7 @@
 .gaveonsker__description {
   font-size: large;
   font-weight: bold;
+  font-variant: small-caps;
 }
 
 .gaveonsker__content {
