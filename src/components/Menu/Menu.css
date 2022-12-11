@@ -1,8 +1,8 @@
 :root {
   --menubar-height: 6rem;
   --menu-color: var(--tertiary-color);
-  --menu-item-gap: calc(15vh / 5);
-  --menu-item-height: calc(60vh / 6);
+  --menu-item-gap: 2rem;
+  --menu-item-height: 8rem;
 }
 
 nav {
@@ -51,40 +51,21 @@ nav {
 /* MENU BAR end 
 ---------------------------------------------------
    MENU LIST start */
-.menu-list__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  row-gap: var(--menu-item-gap);
 
-  z-index: 1;
-
+.menu-list__wrapper {
   position: fixed;
+  top: 0;
   bottom: var(--menubar-height);
-  min-height: calc(100vh - var(--menubar-height));
-  width: 100%;
-
-  background-color: var(--secondary-color);
+  width: 100vw;
 
   animation: append-animate 0.2s ease-out;
 }
 
-.menu-list__close-button {
-  position: fixed;
-  top: 4rem;
-  right: 4rem;
-  z-index: 3;
+.menu-list {
+  height: 100%;
+  overflow-y: scroll;
 
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 50%;
-  font-size: 2.5rem;
-  width: 3rem;
-}
-
-.menu-list__close-button:hover {
-  filter: brightness(80%);
+  background-color: var(--secondary-color);
 }
 
 .menu-list__item {
@@ -95,7 +76,7 @@ nav {
   align-items: center;
 
   min-height: var(--menu-item-height);
-  width: 80vw;
+  margin: 0 10vw var(--menu-item-gap);
 
   background-color: var(--menu-color);
 
@@ -114,6 +95,10 @@ nav {
   filter: brightness(110%);
 }
 
+.menu-list__item:first-child {
+  margin-top: var(--menu-item-gap);
+}
+
 .menu-list__item:last-child {
   margin-bottom: var(--menu-item-gap);
 }
@@ -128,6 +113,25 @@ nav {
 
 .menu-list__item:last-child::after {
   content: none;
+}
+
+.menu-list__close-button {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  z-index: 3;
+
+  background-color: var(--primary-color);
+  box-shadow: 1px 2px 48px -1px rgba(0, 0, 0, 0.26);
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  width: 4.5rem;
+  height: 4.5;
+}
+
+.menu-list__close-button:hover {
+  filter: brightness(110%);
 }
 /* MENU LIST end */
 

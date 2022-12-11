@@ -16,7 +16,7 @@ export const Menu = ({ activeElement }: MenuProps) => {
   useOnClickOutside([listContainerRef, menuButtonRef], () => setOpen(false));
 
   return (
-    <nav className={`${open ? "nav--open" : ""}`}>
+    <nav>
       <MenuBar
         open={open}
         setOpen={setOpen}
