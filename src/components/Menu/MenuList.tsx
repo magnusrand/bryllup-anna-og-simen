@@ -17,13 +17,15 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
         >
           X
         </button>
-        <div ref={ref} className="menu-list__container">
-          <ListItem to={"/gaveonsker"} name="Gaveønsker" />
-          <ListItem to={"/"} name="Helgeprogram" />
-          <ListItem to={"/"} name="Bryllupsdagen" />
-          <ListItem to={"/"} name="Overnatting" />
-          <ListItem to={"/"} name="Kontaktinfo" />
-          <ListItem to={"/"} name="Forside" />
+        <div className="menu-list__wrapper">
+          <div ref={ref} className="menu-list">
+            <ListItem to={"/gaveonsker"} name="Gaveønsker" setOpen={setOpen} />
+            <ListItem to={"/"} name="Helgeprogram" setOpen={setOpen} />
+            <ListItem to={"/"} name="Bryllupsdagen" setOpen={setOpen} />
+            <ListItem to={"/"} name="Overnatting" setOpen={setOpen} />
+            <ListItem to={"/"} name="Kontaktinfo" setOpen={setOpen} />
+            <ListItem to={"/"} name="Forside" setOpen={setOpen} />
+          </div>
         </div>
       </>
     );
@@ -33,11 +35,12 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
 type ListItemProps = {
   name: string;
   to: To;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const ListItem = ({ name, to }: ListItemProps) => {
+const ListItem = ({ name, to, setOpen }: ListItemProps) => {
   return (
-    <Link className="menu-list__item" to={to}>
+    <Link className="menu-list__item" to={to} onClick={() => setOpen(false)}>
       {name}
     </Link>
   );
