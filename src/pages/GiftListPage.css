@@ -1,6 +1,10 @@
+.App:has(.gaveonsker__content) {
+  --menu-color: var(--tertiary-color);
+}
+
 .gaveonsker__header-header {
   padding: 1rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--menu-color);
   color: var(--white-color);
   margin-bottom: 1rem;
 }

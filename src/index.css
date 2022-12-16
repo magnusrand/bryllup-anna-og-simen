@@ -19,6 +19,7 @@ body {
 .page-header {
   font-size: min(4rem, 8vw);
   font-weight: 600;
+  font-family: "Alice";
 }
 
 .responsive-normal-text {
@@ -38,5 +39,7 @@ body :not(:is(h1, h2, h3, h4, h5, h6)) {
   --white-color: #ffffff;
   --text-color: #1f1f1f;
 
+  --primary-color--hover: #dbbcba;
+  --secondary-color--hover: #dececc;
   --tertiary-color--hover: #cc884b;
 }
