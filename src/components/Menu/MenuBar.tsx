@@ -2,7 +2,7 @@ import React from "react";
 import { Link, To } from "react-router-dom";
 import { CgMenuCake } from "react-icons/cg";
 import { BsBookHalf } from "react-icons/bs";
-import { RiHotelBedFill } from "react-icons/ri";
+import { BiChurch } from "react-icons/bi";
 
 import "./Menu.css";
 
@@ -43,9 +43,9 @@ export const MenuBar = ({
       />
       <MenuBaritem
         type="link"
-        name="Overnatting"
+        name="Bryllupsdagen"
         to={"/overnatting"}
-        icon={<RiHotelBedFill size={"1.25rem"} aria-hidden="true" />}
+        icon={<BiChurch size={"1.25rem"} aria-hidden="true" />}
       />
     </div>
   );

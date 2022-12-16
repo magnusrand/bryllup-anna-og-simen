@@ -20,12 +20,12 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
         </button>
         <div ref={ref} className="menu-list__wrapper">
           <div className="menu-list">
-            <ListItem to={"/gaveonsker"} name="Gaveønsker" setOpen={setOpen} />
+            <ListItem to={"/"} name="Forside" setOpen={setOpen} />
             <ListItem to={"/"} name="Helgeprogram" setOpen={setOpen} />
             <ListItem to={"/"} name="Bryllupsdagen" setOpen={setOpen} />
             <ListItem to={"/"} name="Overnatting" setOpen={setOpen} />
+            <ListItem to={"/gaveonsker"} name="Gaveønsker" setOpen={setOpen} />
             <ListItem to={"/"} name="Kontaktinfo" setOpen={setOpen} />
-            <ListItem to={"/"} name="Forside" setOpen={setOpen} />
           </div>
         </div>
       </>
