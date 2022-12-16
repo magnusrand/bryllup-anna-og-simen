@@ -2,6 +2,7 @@
   --menubar-height: 6rem;
   --menubar-icon-width: 2.875rem;
   --menu-color: var(--tertiary-color);
+  --menu-text-color: var(--white-color);
   --menu-hover-color: var(--tertiary-color--hover);
   --menu-item-gap: 3rem;
   --menu-item-height: 8rem;
@@ -24,7 +25,7 @@ nav {
 
   width: 100%;
   min-height: var(--menubar-height);
-  background: var(--primary-color);
+  background: var(--menu-color);
 }
 
 .menubar__item__container {
@@ -90,7 +91,7 @@ nav {
   background-color: var(--menu-color);
 
   text-decoration: none;
-  color: var(--white-color);
+  color: var(--menu-text-color);
   font-size: 2.25rem;
   font-weight: 300;
 
