@@ -10,7 +10,7 @@ export const GiftListPage = () => {
       <h2 className="gaveonsker__description responsive-normal-text">
         lenker til gavelister
       </h2>
-      <Link href="https://www.kitchn.no/">Kitchn</Link>
+      <Link href="https://www.kitchn.no/">Kitch'n</Link>
       <Link href="https://www.kitchn.no/">Jernbanemuseet</Link>
     </div>
   );

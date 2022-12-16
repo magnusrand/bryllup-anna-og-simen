@@ -8,6 +8,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::after {
+  background-image: url("https://images.unsplash.com/photo-1613408181923-f058a1b0e00c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80");
+  background-image: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+  background-size: cover;
+  background-position: bottom;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .content {
   max-width: 55rem;
   /* larger spacing on larger screens, very small spacing on tiny screens */
@@ -18,7 +33,7 @@ body {
 
 .page-header {
   font-size: min(4rem, 8vw);
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Alice";
 }
 

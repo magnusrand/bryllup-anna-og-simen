@@ -12,10 +12,12 @@ export const LandigPage = () => {
           <div className="landing-page__header__line" />
         </div>
         <div>Simen</div>
+        <div className="landing-page__header__date"> — 10 . 6 . 23 —</div>
       </div>
       <div className="landing-page__content">
-        Vi gifter oss! Og vi håper du vil være med oss og feire denne spesielle
-        dagen ♥️
+        Vi gifter oss!
+        <br />
+        Og vi håper du vil være med oss og feire denne spesielle dagen ♥️
       </div>
     </div>
   );

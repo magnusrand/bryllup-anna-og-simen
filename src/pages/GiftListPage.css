@@ -27,7 +27,8 @@
   height: 2px;
   content: "";
   background: var(--white-color);
-  margin-inline: 1rem;
+  width: min(10rem, 30vw);
+  margin: 0.75rem auto 0.5rem;
 }
 
 .gaveonsker__description {
