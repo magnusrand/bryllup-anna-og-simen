@@ -26,6 +26,10 @@ nav {
   width: 100%;
   min-height: var(--menubar-height);
   background: var(--menu-color);
+
+  box-shadow: 0px -3px 71px -28px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px -3px 71px -28px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px -3px 71px -28px rgba(0, 0, 0, 0.41);
 }
 
 .menubar__item__container {
@@ -33,6 +37,8 @@ nav {
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
+  position: relative;
+  top: 0.1rem;
 
   width: var(--menubar-icon-width);
 }
