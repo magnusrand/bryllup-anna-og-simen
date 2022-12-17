@@ -29,6 +29,8 @@ body::after {
   padding: calc(1vmin + 0.5rem);
   /* shorthand for margin-left/margin-right */
   margin-inline: auto;
+  max-height: calc(100vh - var(--menubar-height));
+  overflow: scroll;
 }
 
 .page-header {
