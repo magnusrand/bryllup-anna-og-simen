@@ -2,35 +2,6 @@
   --menu-color: var(--tertiary-color);
 }
 
-.gaveonsker__header-header {
-  padding: 1rem;
-  background-color: var(--menu-color);
-  color: var(--white-color);
-  margin-bottom: 1rem;
-}
-
-.gaveonsker__header-text {
-  font-family: "Alice";
-}
-
-.gaveonsker__header-text::before {
-  margin-bottom: 0.5rem;
-}
-
-.gaveonsker__header-text::after {
-  margin-top: 0.5rem;
-}
-
-.gaveonsker__header-text::before,
-.gaveonsker__header-text::after {
-  display: block;
-  height: 2px;
-  content: "";
-  background: var(--white-color);
-  width: min(10rem, 30vw);
-  margin: 0.75rem auto 0.5rem;
-}
-
 .gaveonsker__description {
   font-size: large;
   font-weight: bold;

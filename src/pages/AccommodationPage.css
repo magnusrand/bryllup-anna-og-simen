@@ -1,0 +1,14 @@
+.App:has(.accomodation__content) {
+  --menu-color: var(--tertiary-color);
+}
+
+
+.accomodation__content {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.accomodation__map {
+  height: 450px;
+}
