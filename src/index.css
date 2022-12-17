@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Source+Sans+Pro:wght@300;400&display=swap");
 
+:root {
+  /* COLORS */
+  --primary-color: #fad7d5;
+  --secondary-color: #fff4f3;
+  --tertiary-color: #f8b67c;
+  --accent-1-color: #94ac78;
+  --accent-2-color: #769293;
+  --white-color: #ffffff;
+  --text-color: #1f1f1f;
+
+  --primary-color--hover: #dbbcba;
+  --secondary-color--hover: #dececc;
+  --tertiary-color--hover: #cc884b;
+}
+
 body {
   margin: 0;
   font-family: "Alice", serif;
@@ -13,6 +28,7 @@ body::after {
   background-image: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
   background-size: cover;
   background-position: bottom;
+  background-repeat: repeat;
   content: "";
   opacity: 0.5;
   top: 0;
@@ -33,6 +49,10 @@ body::after {
   overflow: scroll;
 }
 
+.content > div {
+  margin-bottom: var(--menubar-height);
+}
+
 .page-header {
   font-size: min(4rem, 8vw);
   font-weight: 400;
@@ -45,18 +65,4 @@ body::after {
 
 body :not(:is(h1, h2, h3, h4, h5, h6)) {
   line-height: 1.75;
-}
-
-:root {
-  --primary-color: #fad7d5;
-  --secondary-color: #fff4f3;
-  --tertiary-color: #f8b67c;
-  --accent-1-color: #94ac78;
-  --accent-2-color: #769293;
-  --white-color: #ffffff;
-  --text-color: #1f1f1f;
-
-  --primary-color--hover: #dbbcba;
-  --secondary-color--hover: #dececc;
-  --tertiary-color--hover: #cc884b;
 }
