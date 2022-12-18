@@ -22,7 +22,6 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
           <div className="menu-list">
             <ListItem to={"/"} name="Forside" setOpen={setOpen} />
             <ListItem to={"/"} name="Helgeprogram" setOpen={setOpen} />
-            <ListItem to={"/"} name="Bryllupsdagen" setOpen={setOpen} />
             <ListItem
               to={"/overnatting"}
               name="Overnatting"
