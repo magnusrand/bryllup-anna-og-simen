@@ -2,7 +2,7 @@ import React from "react";
 import { Link, To } from "react-router-dom";
 import { CgMenuCake } from "react-icons/cg";
 import { BsBookHalf } from "react-icons/bs";
-import { BiChurch } from "react-icons/bi";
+import { BiBed } from "react-icons/bi";
 
 import "./Menu.css";
 
@@ -37,15 +37,15 @@ export const MenuBar = ({
       />
       <MenuBaritem
         type="link"
-        name="Program"
+        name="Helgeprogram"
         to={"/program"}
         icon={<BsBookHalf size={"1.25rem"} aria-hidden="true" />}
       />
       <MenuBaritem
         type="link"
-        name="Bryllupsdagen"
+        name="Overnatting"
         to={"/overnatting"}
-        icon={<BiChurch size={"1.25rem"} aria-hidden="true" />}
+        icon={<BiBed size={"1.25rem"} aria-hidden="true" />}
       />
     </div>
   );
