@@ -23,7 +23,6 @@ body:has(.landing-page__wrapper)::after {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem;
 }
 
 .landing-page__header-box {
