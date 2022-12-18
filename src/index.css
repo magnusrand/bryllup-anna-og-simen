@@ -44,11 +44,12 @@ body::after {
 .content {
   max-width: 55rem;
   /* larger spacing on larger screens, very small spacing on tiny screens */
-  padding: calc(1vmin + 0.5rem);
+  padding: calc(1vmin + 1rem);
   /* shorthand for margin-left/margin-right */
   margin-inline: auto;
   max-height: calc(100vh - var(--menubar-height));
   overflow: scroll;
+  margin: 1.5rem;
 }
 
 .content > div {
@@ -66,6 +67,7 @@ body::after {
   font-weight: 200;
   font-family: "Cedarville Cursive";
   text-align: center;
+  margin-bottom: -1rem;
 }
 
 .responsive-normal-text {

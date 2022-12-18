@@ -38,7 +38,7 @@ export const MenuBar = ({
       <MenuBaritem
         type="link"
         name="Helgeprogram"
-        to={"/program"}
+        to={"/helgeprogram"}
         icon={<BsBookHalf size={"1.25rem"} aria-hidden="true" />}
       />
       <MenuBaritem

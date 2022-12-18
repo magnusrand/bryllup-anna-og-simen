@@ -4,6 +4,7 @@ import { Menu } from "./components/Menu/Menu";
 import { LandigPage } from "./pages/LandingPage";
 import { GiftListPage } from "./pages/GiftListPage";
 import { AccomodationPage } from "./pages/AccommodationPage";
+import { ProgramPage } from "./pages/ProgramPage";
 
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<LandigPage />} />
           <Route path="/gaveonsker" element={<GiftListPage />} />
           <Route path="/overnatting" element={<AccomodationPage />} />
+          <Route path="/helgeprogram" element={<ProgramPage />} />
         </Routes>
       </div>
       <Menu activeElement={currentPath.pathname} />
