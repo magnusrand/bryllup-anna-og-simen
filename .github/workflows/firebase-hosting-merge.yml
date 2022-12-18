@@ -8,6 +8,8 @@ name: Deploy to Firebase Hosting on merge
       - main
 jobs:
   build_and_deploy:
+    env:
+      REACT_APP_MAPS_API_KEY: ${{ secrets.MAPS_API_KEY_PROD }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

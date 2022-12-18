@@ -3,10 +3,16 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Menu } from "./components/Menu/Menu";
 import { LandigPage } from "./pages/LandingPage";
 import { GiftListPage } from "./pages/GiftListPage";
+import { AccomodationPage } from "./pages/AccommodationPage";
 
 import "./App.css";
 
-export type Page = "/" | "/gaveonsker" | "/kontakt-oss" | "program";
+export type Page =
+  | "/"
+  | "/gaveonsker"
+  | "/overnatting"
+  | "/kontakt-oss"
+  | "program";
 
 function App() {
   const currentPath = useLocation();
@@ -16,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandigPage />} />
           <Route path="/gaveonsker" element={<GiftListPage />} />
+          <Route path="/overnatting" element={<AccomodationPage />} />
         </Routes>
       </div>
       <Menu activeElement={currentPath.pathname} />
