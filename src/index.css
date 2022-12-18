@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Source+Sans+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cedarville+Cursive&family=Crimson+Text:ital@0;1&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 :root {
   /* COLORS */
@@ -19,6 +19,8 @@ body {
   margin: 0;
   font-family: "Alice", serif;
   font-family: "Source Sans Pro", sans-serif;
+  font-family: "Cedarville Cursive", cursive;
+  font-family: "Crimson Text", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -54,13 +56,26 @@ body::after {
 }
 
 .page-header {
-  font-size: min(4rem, 8vw);
-  font-weight: 400;
-  font-family: "Alice";
+  font-size: min(6rem, 12vw);
+  font-weight: 200;
+  font-family: "Cedarville Cursive";
+}
+
+.section-heading {
+  font-size: min(4rem, 10vw);
+  font-weight: 200;
+  font-family: "Cedarville Cursive";
+  text-align: center;
 }
 
 .responsive-normal-text {
   font-size: min(1.5rem, 5vw);
+}
+
+.normal-text {
+  font-family: "Crimson Text";
+  font-size: 2rem;
+  text-align: left;
 }
 
 body :not(:is(h1, h2, h3, h4, h5, h6)) {

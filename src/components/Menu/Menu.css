@@ -41,6 +41,7 @@ nav {
   top: 0.1rem;
 
   width: var(--menubar-icon-width);
+  font-family: "Source Sans Pro";
 }
 
 .menubar__item__container:hover {
@@ -182,6 +183,7 @@ button.menubar__item__button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  font-family: "Source Sans Pro";
 }
 
 .menubar__item__link,

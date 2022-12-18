@@ -5,7 +5,7 @@ import "./AccommodationPage.css";
 
 export const AccomodationPage = () => {
   return (
-    <div className="accomodation__content">
+    <div className="accomodation__content normal-text">
       <Header>Overnatting</Header>
       <p>
         Willkommen zur Website des Norwegischen Eisenbahnmuseums. Wir hoffen,
