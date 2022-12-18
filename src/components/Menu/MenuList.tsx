@@ -3,17 +3,17 @@ import { Link, To } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 
 type MenuListProps = {
-  open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  onCloseButtonClick: () => void;
 };
 
 export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
-  ({ open, setOpen }, ref) => {
+  ({ setOpen, onCloseButtonClick }, ref) => {
     return (
       <>
         <button
           className="menu-list__close-button"
-          onClick={() => setOpen(false)}
+          onClick={onCloseButtonClick}
           aria-label="Lukk meny"
         >
           <MdClose />
@@ -21,7 +21,11 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
         <div ref={ref} className="menu-list__wrapper">
           <div className="menu-list">
             <ListItem to={"/"} name="Forside" setOpen={setOpen} />
-            <ListItem to={"/"} name="Helgeprogram" setOpen={setOpen} />
+            <ListItem
+              to={"/helgeprogram"}
+              name="Helgeprogram"
+              setOpen={setOpen}
+            />
             <ListItem
               to={"/overnatting"}
               name="Overnatting"

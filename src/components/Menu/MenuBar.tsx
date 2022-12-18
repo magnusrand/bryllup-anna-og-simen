@@ -9,22 +9,22 @@ import "./Menu.css";
 type MenuBarProps = {
   activeElement: string;
   open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   menuButtonRef: any;
+  onMenuButtonClick: () => void;
 };
 
 export const MenuBar = ({
   activeElement,
   open,
-  setOpen,
   menuButtonRef,
+  onMenuButtonClick,
 }: MenuBarProps) => {
   return (
     <div className="menubar__background">
       <MenuBaritem
         type="button"
         name="Meny"
-        onClick={() => setOpen(!open)}
+        onClick={onMenuButtonClick}
         open={open}
         icon={
           <CgMenuCake
@@ -77,7 +77,7 @@ const MenuBaritem = ({
   const content = (
     <>
       <span className="menubar__item__icon-container">{icon}</span>
-      {name}
+      <span className="menubar__item__text">{name}</span>
     </>
   );
 

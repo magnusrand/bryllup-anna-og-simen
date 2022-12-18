@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cedarville+Cursive&family=Crimson+Text:ital@0;1&family=Source+Sans+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cedarville+Cursive&family=Crimson+Text:ital@0;1&family=Marvel:ital,wght@0,400;0,700;1,400&family=Ms+Madi&family=Saira+Condensed:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 :root {
   /* COLORS */
-  --primary-color: #fad7d5;
+  --primary-color: #838a74;
   --secondary-color: #fff4f3;
   --tertiary-color: #f8b67c;
   --accent-1-color: #94ac78;
@@ -10,9 +10,13 @@
   --white-color: #ffffff;
   --text-color: #1f1f1f;
 
-  --primary-color--hover: #dbbcba;
+  --primary-color--hover: #606653;
   --secondary-color--hover: #dececc;
   --tertiary-color--hover: #cc884b;
+
+  /* TEXT */
+  --normal-text: "Marvel";
+  --fancy-text: "Ms Madi";
 }
 
 body {
@@ -21,6 +25,9 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Cedarville Cursive", cursive;
   font-family: "Crimson Text", serif;
+  font-family: "Ms Madi", cursive;
+  font-family: "Saira Condensed", sans-serif;
+  font-family: "Marvel", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -44,12 +51,11 @@ body::after {
 .content {
   max-width: 55rem;
   /* larger spacing on larger screens, very small spacing on tiny screens */
-  padding: calc(1vmin + 1rem);
+  padding: 3rem calc(1vmin + 2.5rem);
   /* shorthand for margin-left/margin-right */
   margin-inline: auto;
   max-height: calc(100vh - var(--menubar-height));
   overflow: scroll;
-  margin: 1.5rem;
 }
 
 .content > div {
@@ -59,15 +65,15 @@ body::after {
 .page-header {
   font-size: min(6rem, 12vw);
   font-weight: 200;
-  font-family: "Cedarville Cursive";
+  font-family: var(--fancy-text);
 }
 
 .section-heading {
-  font-size: min(4rem, 10vw);
+  font-size: min(4rem, 14vw);
   font-weight: 200;
-  font-family: "Cedarville Cursive";
+  font-family: var(--fancy-text);
   text-align: center;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .responsive-normal-text {
@@ -75,7 +81,7 @@ body::after {
 }
 
 .normal-text {
-  font-family: "Crimson Text";
+  font-family: var(--normal-text), "Saira Condensed";
   font-size: 2rem;
   text-align: left;
 }

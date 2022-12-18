@@ -15,7 +15,20 @@ export const Menu = ({ activeElement }: MenuProps) => {
   const menuButtonRef = useRef(null);
 
   useOnClickOutside([listContainerRef, menuButtonRef], () => {
+    animateMenuOut();
+  });
+
+  const handleOnMenuButtonClick = () => {
+    if (!open) {
+      setOpen(true);
+    } else {
+      animateMenuOut();
+    }
+  };
+
+  const animateMenuOut = () => {
     listContainerRef.current?.classList.add("menu-list__wrapper--animate-out");
+
     setTimeout(() => {
       listContainerRef.current?.classList.remove(
         "menu-list__wrapper--animate-out"
@@ -23,18 +36,22 @@ export const Menu = ({ activeElement }: MenuProps) => {
 
       setOpen(false);
     }, 200);
-  });
+  };
 
   return (
     <nav>
       <MenuBar
         open={open}
-        setOpen={setOpen}
         activeElement={activeElement}
         menuButtonRef={menuButtonRef}
+        onMenuButtonClick={handleOnMenuButtonClick}
       />
       {open && (
-        <MenuList ref={listContainerRef} open={open} setOpen={setOpen} />
+        <MenuList
+          ref={listContainerRef}
+          setOpen={setOpen}
+          onCloseButtonClick={animateMenuOut}
+        />
       )}
     </nav>
   );

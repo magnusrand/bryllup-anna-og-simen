@@ -1,7 +1,7 @@
 :root:has(.landing-page__wrapper) {
   --menu-color: var(--primary-color);
-  --menu-text-color: var(--text-color);
   --menu-hover-color: var(--primary-color--hover);
+  --menu-text-color: var(--white-color);
 }
 
 body:has(.landing-page__wrapper)::after {
@@ -27,6 +27,7 @@ body:has(.landing-page__wrapper)::after {
 
 .landing-page__header-box {
   background-color: var(--menu-color);
+  color: var(--menu-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
