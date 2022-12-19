@@ -8,21 +8,17 @@ export const AccomodationPage = () => {
     <div className="accomodation__content normal-text">
       <Header>Overnatting</Header>
       <p>
-        Willkommen zur Website des Norwegischen Eisenbahnmuseums. Wir hoffen,
-        Sie bei uns in Hamar begrüßen zu dürfen! Das Museum genießt eine
-        herrliche Lage an der Mjøsa, nördlich des Stadtzentrums von Hamar. Außer
-        seinen modernen Ausstellungen in den Innenräumen des Museums bietet das
-        Museum auch einen weitläufigen Freilichtmuseumspark mit verschiedenen
-        Bahnhofsgebäuden und Gleissystemen. Im Sommer wird auch eine
-        Schmalspurbahn auf dem Gelände betrieben. Im Hauptgebäude gibt es auch
-        eine große Bibliothek mit Eisenbahnliteratur und einer Fotosammlung.
-        Hier gibt es alles, was das Eisenbahnerherz höher schlagen lässt! Auf
-        dieser Seite sehen Sie den deutschen Text, indem Sie das Hauptmenü oben
-        öffnen. Die meisten Untermenüs haben einen deutschen Text.
+        For de av dere som er i behov av overnatting er det flere gode muligheter i nærheten av både hjemmet vårt og kirken.
+      </p>
+      <p>
+        VI har vært i kontakt med Scandic Hamar og allerede bestilt noen rom til rabattert pris. Si ifra dersom du eller dere ønsker å bo på Scandic for helgen, så kan vi forsøke å få tak i flere rom til denne prisen.
+      </p>
+      <p>
+        Andre alternativer for helgen er Victoria Hotel og Astoria Hotel.
       </p>
       <div className="accomodation__map">
         <Wrapper apiKey={process.env.REACT_APP_MAPS_API_KEY as string}>
-          <GoogleMap center={{ lat: 60.800341, lng: 11.028161 }} zoom={16} />
+          <GoogleMap center={{ lat: 60.795904, lng: 11.086711 }} zoom={16} />
         </Wrapper>
       </div>
     </div>

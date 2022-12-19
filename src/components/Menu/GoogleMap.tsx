@@ -3,9 +3,11 @@ import { useEffect, useRef } from "react";
 export const GoogleMap = ({
   center,
   zoom,
+  label
 }: {
   center: google.maps.LatLngLiteral;
   zoom: number;
+  label?: string;
 }) => {
   const mapElement = useRef<HTMLDivElement>(null);
 
@@ -17,7 +19,7 @@ export const GoogleMap = ({
       center,
       zoom,
     });
-    new google.maps.Marker({ position: center, map });
+    new google.maps.Marker({ position: center, map, label });
   });
 
   return <div ref={mapElement} style={{ height: "100%" }} id="map" />;
