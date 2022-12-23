@@ -1,5 +1,7 @@
 .App:has(.gaveonsker__content) {
-  --menu-color: var(--tertiary-color);
+  --menu-color: var(--accent-2-color);
+  --menu-hover-color: var(--accent-2-color--hover);
+  --menu-text-color: var(--white-color);
 }
 
 .gaveonsker__description {

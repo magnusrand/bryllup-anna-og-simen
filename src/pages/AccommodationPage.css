@@ -1,13 +1,15 @@
-.App:has(.accomodation__content) {
-  --menu-color: var(--tertiary-color);
+.App:has(.accommodation__content) {
+  --menu-color: var(--accent-1-color);
+  --menu-hover-color: var(--accent-1-color--hover);
+  --menu-text-color: var(--text-color);
 }
 
-.accomodation__content {
+.accommodation__content {
   display: flex;
   flex-direction: column;
   /* margin: 1.5rem; */
 }
 
-.accomodation__map {
+.accommodation__map {
   height: 450px;
 }
