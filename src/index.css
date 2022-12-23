@@ -86,6 +86,10 @@ body::after {
   text-align: left;
 }
 
+.normal-text > p {
+  line-height: 2.5rem;
+}
+
 body :not(:is(h1, h2, h3, h4, h5, h6)) {
   line-height: 1.75;
 }
