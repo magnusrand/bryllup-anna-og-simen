@@ -120,7 +120,9 @@ nav {
   align-items: center;
 
   min-height: var(--menu-item-height);
-  margin: 0 10vw var(--menu-item-gap);
+  max-width: min(55rem, 85vw);
+  margin: 0 0 var(--menu-item-gap);
+  margin-inline: auto;
 
   background-color: var(--menu-color);
 

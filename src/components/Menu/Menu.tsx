@@ -35,7 +35,7 @@ export const Menu = ({ activeElement }: MenuProps) => {
       );
 
       setOpen(false);
-    }, 200);
+    }, 180);
   };
 
   return (
