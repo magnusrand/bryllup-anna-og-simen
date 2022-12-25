@@ -65,13 +65,13 @@ body::after {
 }
 
 .page-header {
-  font-size: min(6rem, 12vw);
+  font-size: min(6rem, 16vw);
   font-weight: 200;
   font-family: var(--fancy-text);
 }
 
 .section-heading {
-  font-size: min(4rem, 14vw);
+  font-size: min(3.5rem, 14vw);
   font-weight: 200;
   font-family: var(--fancy-text);
   text-align: center;

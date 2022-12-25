@@ -31,20 +31,14 @@ export const LandigPage = () => {
           Dersom dere har noen spørsmål eller innspill, ta enten kontakt med oss
           eller toastmastere. Kontaktinformasjon ligger i menyen. Svar utbedes
           1. april til en av oss – både for fredag og lørdag. Gi oss også
-          beskjed dersom det er noen forbehold som må tas i forhold til
+          beskjed dersom det er noen forbehold som må tas i forbindelse med
           matservering.
         </p>
         <p>
           Siden vil bli oppdatert fortløpende frem mot bryllupsdagen. Håper vi
           sees i juni ♥️
         </p>
-        <p>
-          Mange klemmer fra{" "}
-          {/* <br />
-          <span style={{ fontFamily: "Cedarville Cursive", fontSize: "4rem" }}> */}
-          Anna og Simen
-          {/* </span> */}
-        </p>
+        <p>Mange klemmer fra Anna og Simen</p>
       </div>
     </div>
   );
