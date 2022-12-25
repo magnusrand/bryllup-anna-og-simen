@@ -95,3 +95,14 @@ body::after {
 body :not(:is(h1, h2, h3, h4, h5, h6)) {
   line-height: 1.75;
 }
+
+.reveal-children :is(p, h1, h2, h3):not(.page-header) {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s opacity, 1s transform;
+}
+
+.reveal-children :is(p, h1, h2, h3):not(.page-header).active {
+  transform: translateY(0);
+  opacity: 1;
+}
