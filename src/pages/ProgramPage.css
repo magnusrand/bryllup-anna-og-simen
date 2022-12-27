@@ -1,3 +1,9 @@
+:root:has(.program__content) {
+  --menu-color: var(--tertiary-color);
+  --menu-hover-color: var(--tertiary-color--hover);
+  --menu-text-color: var(--text-color);
+}
+
 .program__content {
   display: flex;
   flex-direction: column;

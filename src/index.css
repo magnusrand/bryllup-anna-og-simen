@@ -4,17 +4,17 @@
   /* COLORS */
   --primary-color: #838a74;
   --secondary-color: #fff4f3;
-  --tertiary-color: #674422;
-  --accent-1-color: #a8ad9c;
-  --accent-2-color: #84748a;
+  --tertiary-color: #d1ae8a;
+  --accent-1-color: #bbbfb3;
+  --accent-2-color: #280003;
   --white-color: #ffffff;
   --text-color: #1f1f1f;
 
   --primary-color--hover: #606653;
   --secondary-color--hover: #dececc;
-  --tertiary-color--hover: #4a3016;
-  --accent-1-color--hover: #828774;
-  --accent-2-color--hover: #5d4e63;
+  --tertiary-color--hover: #a38464;
+  --accent-1-color--hover: #979c8f;
+  --accent-2-color--hover: #7d3339;
 
   /* TEXT */
   --normal-text: "Marvel";
