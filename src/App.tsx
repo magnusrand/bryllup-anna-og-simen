@@ -8,6 +8,7 @@ import { ProgramPage } from "./pages/ProgramPage";
 import { useAddRevealListener } from "./utils/useAddRevealListener";
 
 import "./App.css";
+import { ScrollToTop } from "./utils/ScrollToTop";
 
 export type Page =
   | "/"
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop scrollElement={contentRef} />
       <div className="content reveal-children" ref={contentRef}>
         <Routes>
           <Route path="/" element={<LandigPage />} />
