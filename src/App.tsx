@@ -1,14 +1,17 @@
 import React, { useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+
 import { Menu } from "./components/Menu/Menu";
+import { useAddRevealListener } from "./utils/useAddRevealListener";
+import { ScrollToTop } from "./utils/ScrollToTop";
+
 import { LandigPage } from "./pages/LandingPage";
 import { GiftListPage } from "./pages/GiftListPage";
 import { AccomodationPage } from "./pages/AccommodationPage";
 import { ProgramPage } from "./pages/ProgramPage";
-import { useAddRevealListener } from "./utils/useAddRevealListener";
+import { ContactPage } from "./pages/ContactPage";
 
 import "./App.css";
-import { ScrollToTop } from "./utils/ScrollToTop";
 
 export type Page =
   | "/"
@@ -31,6 +34,7 @@ function App() {
           <Route path="/gaveonsker" element={<GiftListPage />} />
           <Route path="/overnatting" element={<AccomodationPage />} />
           <Route path="/helgeprogram" element={<ProgramPage />} />
+          <Route path="/kontaktinfo" element={<ContactPage />} />
         </Routes>
       </div>
       <Menu activeElement={currentPath.pathname} />

@@ -32,7 +32,11 @@ export const MenuList = React.forwardRef<HTMLDivElement, MenuListProps>(
               setOpen={setOpen}
             />
             <ListItem to={"/gaveonsker"} name="Gaveønsker" setOpen={setOpen} />
-            <ListItem to={"/"} name="Kontaktinfo" setOpen={setOpen} />
+            <ListItem
+              to={"/kontaktinfo"}
+              name="Kontaktinfo"
+              setOpen={setOpen}
+            />
           </div>
         </div>
       </>

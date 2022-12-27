@@ -1,0 +1,10 @@
+.App:has(.contact__content) {
+  --menu-color: var(--accent-1-color);
+  --menu-hover-color: var(--accent-1-color--hover);
+  --menu-text-color: var(--text-color);
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+}
