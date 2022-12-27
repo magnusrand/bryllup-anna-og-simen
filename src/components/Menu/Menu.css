@@ -148,7 +148,7 @@ nav {
   font-family: var(--normal-text);
 
   box-shadow: 0px 0px 0px 10px var(--menu-color) inset,
-    0px 0px 0px 12px var(--white-color) inset;
+    0px 0px 0px 12px var(--menu-text-color) inset;
   transition: all ease 0.2s;
 }
 
