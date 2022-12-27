@@ -7,7 +7,7 @@ import { ScrollToTop } from "./utils/ScrollToTop";
 
 import { LandigPage } from "./pages/LandingPage";
 import { GiftListPage } from "./pages/GiftListPage";
-import { AccomodationPage } from "./pages/AccommodationPage";
+import { AccommodationPage } from "./pages/AccommodationPage";
 import { ProgramPage } from "./pages/ProgramPage";
 import { ContactPage } from "./pages/ContactPage";
 
@@ -32,7 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandigPage />} />
           <Route path="/gaveonsker" element={<GiftListPage />} />
-          <Route path="/overnatting" element={<AccomodationPage />} />
+          <Route path="/overnatting" element={<AccommodationPage />} />
           <Route path="/helgeprogram" element={<ProgramPage />} />
           <Route path="/kontaktinfo" element={<ContactPage />} />
         </Routes>

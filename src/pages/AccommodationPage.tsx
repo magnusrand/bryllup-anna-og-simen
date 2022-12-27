@@ -3,7 +3,7 @@ import { GoogleMap } from "../components/Menu/GoogleMap";
 import { Header } from "../components/Menu/Header";
 import "./AccommodationPage.css";
 
-export const AccomodationPage = () => {
+export const AccommodationPage = () => {
   return (
     <div className="accommodation__content normal-text">
       <Header>Overnatting</Header>
