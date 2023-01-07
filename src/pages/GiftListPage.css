@@ -5,9 +5,11 @@
 }
 
 .gaveonsker__description {
-  font-size: large;
+  font-size: 4rem;
   font-weight: bold;
   font-variant: small-caps;
+  transition: none !important;
+  margin-bottom: 0.5rem;
 }
 
 .gaveonsker__content {

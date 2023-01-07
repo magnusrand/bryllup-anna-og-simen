@@ -10,7 +10,12 @@ export const GiftListPage = () => {
         lenker til gavelister
       </h2>
       <Link href="https://www.kitchn.no/">Kitch'n</Link>
-      <Link href="https://www.kitchn.no/">Jernbanemuseet</Link>
+      <Link href="https://jernbanemuseet.no/billettpriser/">
+        Jernbanemuseet
+      </Link>
+      <Link href="https://www2.hm.com/no_no/customer-service/gavekort/gavekort.html">
+        H&M gavekort
+      </Link>
     </div>
   );
 };

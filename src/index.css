@@ -6,7 +6,7 @@
   --secondary-color: #fff4f3;
   --tertiary-color: #d1ae8a;
   --accent-1-color: #bbbfb3;
-  --accent-2-color: #280003;
+  --accent-2-color: #2a9d86;
   --white-color: #ffffff;
   --text-color: #1f1f1f;
 
@@ -14,7 +14,7 @@
   --secondary-color--hover: #dececc;
   --tertiary-color--hover: #a38464;
   --accent-1-color--hover: #979c8f;
-  --accent-2-color--hover: #7d3339;
+  --accent-2-color--hover: #206e5f;
 
   /* TEXT */
   --normal-text: "Marvel";
@@ -79,7 +79,7 @@ body::after {
 }
 
 .responsive-normal-text {
-  font-size: min(1.5rem, 5vw);
+  font-size: min(2rem, 5vw);
 }
 
 .normal-text {
