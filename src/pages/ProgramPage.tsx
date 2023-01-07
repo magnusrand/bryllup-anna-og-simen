@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Header } from "../components/Menu/Header";
 import "./ProgramPage.css";
 
@@ -35,15 +36,20 @@ export const ProgramPage = () => {
         </p>
         <p>
           Resten av dagen blir en feiring av kjærleiken med god mat og drikke,
-          underholdning, dans og en skikkelig fest! Toastmastere for kvelden er
+          underholdning, dans og en skikkelig fest! Info om hvem som blir
+          kveldens toastmaster kommer.
+          {/* Toastmastere for kvelden er
           …. Vi setter stor pris på stemningsfulle bidrag, og ber de som ønsker
-          å bidra med dette om å ta kontakt med toastmasterne våre.
+          å bidra med dette om å ta kontakt med toastmasterne våre. */}
         </p>
         <p>
           Det vil bli felles transport tilbake til Hamar klokken 03.00. Bussene
           vil stoppe på Ajer, Scandic Hamar og et stopp i Bekkelaget.
         </p>
-        <p>Dersom dere har noen spørsmål om dagen er det bare å ta kontakt!</p>
+        <p>
+          Dersom dere har noen spørsmål om dagen er det bare å{" "}
+          <Link to="/kontaktinfo">ta kontakt!</Link>
+        </p>
       </div>
     </div>
   );

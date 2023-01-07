@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./LandingPage.css";
 
@@ -28,11 +29,11 @@ export const LandigPage = () => {
           feiring av kjærligheten!!
         </p>
         <p>
-          Dersom dere har noen spørsmål eller innspill, ta enten kontakt med oss
-          eller toastmastere. Kontaktinformasjon ligger i menyen. Svar utbedes
-          1. april til en av oss – både for fredag og lørdag. Gi oss også
-          beskjed dersom det er noen forbehold som må tas i forbindelse med
-          matservering.
+          Dersom dere har noen spørsmål eller innspill, ta kontakt med oss.
+          Kontaktinformasjon er tilgjengelig via menyen eller{" "}
+          <Link to="/kontaktinfo">denne lenken</Link>. Svar utbedes 1. april til
+          en av oss – både for fredag og lørdag. Gi oss også beskjed dersom det
+          er noen forbehold som må tas i forbindelse med matservering.
         </p>
         <p>
           Siden vil bli oppdatert fortløpende frem mot bryllupsdagen. Håper vi
