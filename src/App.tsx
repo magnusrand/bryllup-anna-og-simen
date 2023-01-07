@@ -10,15 +10,9 @@ import { GiftListPage } from "./pages/GiftListPage";
 import { AccommodationPage } from "./pages/AccommodationPage";
 import { ProgramPage } from "./pages/ProgramPage";
 import { ContactPage } from "./pages/ContactPage";
+import { SongPage } from "./pages/SongPage";
 
 import "./App.css";
-
-export type Page =
-  | "/"
-  | "/gaveonsker"
-  | "/overnatting"
-  | "/kontakt-oss"
-  | "program";
 
 function App() {
   const currentPath = useLocation();
@@ -35,6 +29,7 @@ function App() {
           <Route path="/overnatting" element={<AccommodationPage />} />
           <Route path="/helgeprogram" element={<ProgramPage />} />
           <Route path="/kontaktinfo" element={<ContactPage />} />
+          <Route path="/sang" element={<SongPage />} />
         </Routes>
       </div>
       <Menu activeElement={currentPath.pathname} />
