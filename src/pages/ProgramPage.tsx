@@ -18,7 +18,7 @@ export const ProgramPage = () => {
 
         <p>
           Dere er velkommen til oss i Steenbergs gate 31 fredag 9. juni fra
-          klokken 18.00. Da brura trenger skjønnshetssøvnen sin avsluter vi
+          klokken 18.00. Da brura trenger skjønnhetssøvnen sin avslutter vi
           kvelden rundt 22.00.
         </p>
       </div>
@@ -36,11 +36,9 @@ export const ProgramPage = () => {
         </p>
         <p>
           Resten av dagen blir en feiring av kjærleiken med god mat og drikke,
-          underholdning, dans og en skikkelig fest! Info om hvem som blir
-          kveldens toastmaster kommer.
-          {/* Toastmastere for kvelden er
-          …. Vi setter stor pris på stemningsfulle bidrag, og ber de som ønsker
-          å bidra med dette om å ta kontakt med toastmasterne våre. */}
+          underholdning, dans og en skikkelig fest! Vi setter veldig stor pris
+          på fine og underholdende bidrag i løpet av kvelden.Info om hvem som
+          blir kveldens toastmaster kommer.
         </p>
         <p>
           Det vil bli felles transport tilbake til Hamar klokken 03.00. Bussene
