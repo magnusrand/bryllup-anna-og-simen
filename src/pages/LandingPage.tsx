@@ -6,14 +6,13 @@ import "./LandingPage.css";
 export const LandigPage = () => {
   return (
     <div className="landing-page__wrapper">
-      <div className="landing-page__header-box page-header">
-        <div>Anna</div>
-        <div className="landing-page__header__ampersand">og</div>
-        <div style={{ marginTop: "1rem" }}>Simen</div>
-        <div className="landing-page__header__date"> — 10. juni 2023 —</div>
-      </div>
       <div className="landing-page__content normal-text">
         <h2 className="section-heading">Vi gifter oss!</h2>
+        <img
+          className="landing-page__header-image"
+          src={"/header.svg"}
+          alt="Bilder av Anna og Simen"
+        />
         <p>
           Vi har den store gleden av å invitere venner og familie til
           bryllupsfest 10. juni 2023 på Hamar!
