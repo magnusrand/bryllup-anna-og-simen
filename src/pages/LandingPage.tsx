@@ -10,7 +10,7 @@ export const LandigPage = () => {
         <h2 className="section-heading">Vi gifter oss!</h2>
         <img
           className="landing-page__header-image"
-          src={"/header.svg"}
+          src={"/header.webp"}
           alt="Bilder av Anna og Simen"
         />
         <p>
