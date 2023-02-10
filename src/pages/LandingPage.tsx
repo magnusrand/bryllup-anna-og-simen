@@ -7,7 +7,7 @@ export const LandigPage = () => {
   return (
     <div className="landing-page__wrapper">
       <div className="landing-page__content normal-text">
-        <h2 className="section-heading">Vi gifter oss!</h2>
+        <h2 className="section-heading disable-animation">Vi gifter oss!</h2>
         <img
           className="landing-page__header-image"
           src={"/header.webp"}

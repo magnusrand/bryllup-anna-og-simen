@@ -25,7 +25,22 @@ body:has(.landing-page__wrapper)::after {
   flex-direction: column;
 }
 
-.landing-page__header-box {
+
+.landing-page__header-image {
+  max-width: 100%;
+  margin-top: 4rem;
+}
+
+
+@media screen and (min-width: 600px) {
+  .landing-page__header-box {
+    width: 25rem;
+    margin-inline: auto;
+  }
+}
+
+/*UNUSED HEADER AFTER IMAGE REPLACEMENT
+ .landing-page__header-box {
   background-color: var(--menu-color);
   color: var(--menu-text-color);
   display: flex;
@@ -60,11 +75,4 @@ body:has(.landing-page__wrapper)::after {
   position: relative;
   top: 1.5rem;
   margin: 0 2rem;
-}
-
-@media screen and (min-width: 600px) {
-  .landing-page__header-box {
-    width: 25rem;
-    margin-inline: auto;
-  }
-}
+} */
