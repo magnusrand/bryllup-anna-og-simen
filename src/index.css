@@ -50,6 +50,10 @@ body::after {
   z-index: -1;
 }
 
+a {
+  color: var(--primary-color--hover);
+}
+
 .content {
   max-width: 55rem;
   /* larger spacing on larger screens, very small spacing on tiny screens */

@@ -25,14 +25,16 @@ export const LandigPage = () => {
         </p>
         <p>
           Vi ser frem til en helg fylt med alle vi er så glade i og en skikkelig
-          feiring av kjærligheten!!
+          feiring av kjærligheten!! Mer informasjon om kvelden og toastmaster
+          finnes på <Link to="/helgeprogram">helgeprogramsiden</Link> i menyen.
         </p>
         <p>
           Dersom dere har noen spørsmål eller innspill, ta kontakt med oss.
-          Kontaktinformasjon er tilgjengelig via menyen eller{" "}
-          <Link to="/kontaktinfo">denne lenken</Link>. Svar utbedes 1. april til
-          en av oss – både for fredag og lørdag. Gi oss også beskjed dersom det
-          er noen forbehold som må tas i forbindelse med matservering.
+          Kontaktinformasjon er tilgjengelig på{" "}
+          <Link to="/kontaktinfo">kontaktinfo-siden</Link> i menyen. Svar
+          utbedes 1. april til en av oss – både for fredag og lørdag. Gi oss
+          også beskjed dersom det er noen forbehold som må tas i forbindelse med
+          matservering.
         </p>
         <p>
           Siden vil bli oppdatert fortløpende frem mot bryllupsdagen. Håper vi

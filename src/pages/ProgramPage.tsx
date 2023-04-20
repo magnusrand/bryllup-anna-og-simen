@@ -37,8 +37,11 @@ export const ProgramPage = () => {
         <p>
           Resten av dagen blir en feiring av kjærleiken med god mat og drikke,
           underholdning, dans og en skikkelig fest! Vi setter veldig stor pris
-          på fine og underholdende bidrag i løpet av kvelden.Info om hvem som
-          blir kveldens toastmaster kommer.
+          på fine og underholdende bidrag i løpet av kvelden. Toastmaster for
+          kvelden er vår fine venn, Julia Onsrud Opsahl. Ikke nøl med å ta
+          kontakt med henne på nummeret <a href="tel:+4745402409">454 02 409</a>{" "}
+          om du ønsker å holde en tale eller bidra med noe annet i løpet av
+          feiringen.
         </p>
         <p>
           Det vil bli felles transport tilbake til Hamar klokken 03.00. Bussene
