@@ -27,8 +27,10 @@ body:has(.landing-page__wrapper)::after {
 
 
 .landing-page__header-image {
-  max-width: 100%;
-  margin-top: 4rem;
+  width: calc(100% - 1.5rem);
+  /* add small adjustment values due to crop error in image file */
+  margin-top: calc(0rem - 0.25rem);
+  margin-bottom: calc(-4rem - 0.1rem);
 }
 
 

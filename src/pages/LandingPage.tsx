@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Header } from "../components/Menu/Header";
+
 import "./LandingPage.css";
 
 export const LandigPage = () => {
   return (
     <div className="landing-page__wrapper">
       <div className="landing-page__content normal-text">
+        <Header>
+          <img
+            className="landing-page__header-image"
+            src={"/header.webp"}
+            alt="Bilder av Anna og Simen"
+          />
+        </Header>
         <h2 className="section-heading disable-animation">Vi gifter oss!</h2>
-        <img
-          className="landing-page__header-image"
-          src={"/header.webp"}
-          alt="Bilder av Anna og Simen"
-        />
         <p>
           Vi har den store gleden av å invitere venner og familie til
           bryllupsfest 10. juni 2023 på Hamar!
