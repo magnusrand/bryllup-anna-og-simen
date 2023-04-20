@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, To } from "react-router-dom";
+import { Link, To, useLocation } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 
 type MenuListProps = {
@@ -51,8 +51,16 @@ type ListItemProps = {
 };
 
 const ListItem = ({ name, to, setOpen }: ListItemProps) => {
+  const location = useLocation();
+  console.log(to);
+
+  const classNames =
+    location.pathname === to
+      ? "menu-list__item menu-list__item--selected"
+      : "menu-list__item";
+
   return (
-    <Link className="menu-list__item" to={to} onClick={() => setOpen(false)}>
+    <Link className={classNames} to={to} onClick={() => setOpen(false)}>
       {name}
     </Link>
   );

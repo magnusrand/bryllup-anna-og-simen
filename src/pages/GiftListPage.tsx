@@ -14,11 +14,11 @@ export const GiftListPage = () => {
         <p>
           Vi har allerede blitt spurt om gaveønsker fra noen av dere og har
           derfor opprettet gaveliste på nett.
-          <Link href="https://www.tilbords.no/onskeliste/109585">Tilbords</Link>
-          <Link href="https://www.illumsbolighus.no/on/demandware.store/Sites-illums_bolighus_no-Site/nb_NO/GiftRegistry-ShowOthers?id=c805ee672979b3e79bae40ce83">
-            Illums Bolighus
-          </Link>
         </p>
+        <Link href="https://www.tilbords.no/onskeliste/109585">Tilbords</Link>
+        <Link href="https://www.illumsbolighus.no/on/demandware.store/Sites-illums_bolighus_no-Site/nb_NO/GiftRegistry-ShowOthers?id=c805ee672979b3e79bae40ce83">
+          Illums Bolighus
+        </Link>
         <p>
           Like kjært som gaver fra ønskelisten er et bidrag til bryllupsreise.
           Vi har opprettet en reisekonto med kontonummer 1440 30 68811, og

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, To } from "react-router-dom";
+import { Link, To, useLocation } from "react-router-dom";
 import { CgMenuCake } from "react-icons/cg";
 import { BsBookHalf } from "react-icons/bs";
 import { BiBed } from "react-icons/bi";
@@ -74,6 +74,9 @@ const MenuBaritem = ({
   children,
   className,
 }: MenuBaritemProps) => {
+  const location = useLocation();
+  const active = location.pathname === to;
+
   const content = (
     <>
       <span className="menubar__item__icon-container">{icon}</span>
@@ -85,7 +88,9 @@ const MenuBaritem = ({
     <>
       {to && (
         <Link
-          className={`menubar__item__container menubar__item__link ${className}`}
+          className={`menubar__item__container menubar__item__link ${
+            active ? "menubar__item--active" : ""
+          } ${className}`}
           to={to}
         >
           {content}
@@ -96,7 +101,9 @@ const MenuBaritem = ({
 
   const buttonWrapper = (
     <button
-      className={`menubar__item__container menubar__item__button ${className}`}
+      className={`menubar__item__container menubar__item__button ${
+        active ? "menubar__item--active" : ""
+      } ${className}`}
       onClick={onClick}
       aria-expanded={open}
       ref={menuButtonRef}
